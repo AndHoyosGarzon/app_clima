@@ -1,6 +1,6 @@
 import { PiCityFill } from "react-icons/pi";
 import Card from "./Card";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 function Input() {
   const [location, setLocation] = useState("");
 
@@ -10,12 +10,8 @@ function Input() {
     city.value = "";
   }
 
-  useEffect(() => {
-    console.log(location);
-  }, [location]);
-
   return (
-    <div className="text-center my-5">
+    <div className="text-center my-3">
       <div className="mb-3">
         <label className="fw-bolder h5" htmlFor="ciudad">
           Ingresa tu ciudad:

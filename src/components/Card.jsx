@@ -27,10 +27,8 @@ function Card({ city }) {
     weather();
   }, []);
 
-  console.log(clima);
-
   return (
-    <div className="d-flex justify-content-center mt-5">
+    <div className="d-flex justify-content-center">
       <div className="card bg-light" style={{ width: "500px", height: "auto" }}>
         <div className="card-body">
           <div className="d-flex justify-content-between">
@@ -74,7 +72,7 @@ function Card({ city }) {
             </span>
           </p>
           <p className="card-text fw-bolder h4 ">
-            Estado:
+            Ahora:
             <span className="ms-3">
               <img
                 className="bg-dark rounded pb-2"
